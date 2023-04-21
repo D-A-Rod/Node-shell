@@ -1,10 +1,7 @@
-//Output a prompt
-process.stdout.write('prompt > ');
 
-// The stdin 'data' event fires after a user types in a line
-process.stdin.on('data', (data) => {
-  const cmd = data.toString().trim(); //remove the newline
+const test = function(a,b) {
+    console.log(a+b)
+}
 
-  process.stdout.write('You typed: ' + cmd);
-  process.stdout.write('\nprompt > ');
-});
+test(10,5);
+test(9,9)
